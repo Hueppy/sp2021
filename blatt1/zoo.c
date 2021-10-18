@@ -22,7 +22,7 @@ struct animal {
 struct animal zoo[ANIMALCOUNT] = {
         { .species = MAMMAL,    .name = "Gert",   .age = 4, .food_weight = 1.5 },
         { .species = BIRD,      .name = "Hubert", .age = 1, .food_weight = 0.3 },
-        { .species = AMPHIBIAN, .name = "Günter", .age = 2, .food_weight = 0.5 },
+        { .species = AMPHIBIAN, .name = "Donald", .age = 2, .food_weight = 0.5 },
         { .species = REPTILES,  .name = "Olaf",   .age = 3, .food_weight = 0.7 },
 };
 
