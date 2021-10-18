@@ -1,0 +1,4 @@
+Unsinnige casts:
+x = (double)(7/(float)4); // Das double ist unnötig
+x = (double)(7/4.0); // ""
+x = (double)(7/4);  // ""
