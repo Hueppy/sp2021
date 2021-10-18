@@ -4,22 +4,22 @@
 
 #define ANIMALCOUNT 10
 
-enum viech {
+typedef enum {
     MAMMAL,
     FISH,
     BIRD,
     AMPHIBIAN,
     REPTILES
-};
+} viech;
 
-struct animal {
-    enum viech species;
+typedef struct {
+    viech species;
     char name[20];
     uint8_t age;
     float food_weight;
-};
+} animal;
 
-struct animal zoo[ANIMALCOUNT] = {
+animal zoo[ANIMALCOUNT] = {
         { .species = MAMMAL,    .name = "Gert",   .age = 4, .food_weight = 1.5 },
         { .species = BIRD,      .name = "Hubert", .age = 1, .food_weight = 0.3 },
         { .species = AMPHIBIAN, .name = "Donald", .age = 2, .food_weight = 0.5 },
@@ -57,7 +57,7 @@ void more_food() {
     }
 }
 
-void print_animal(struct animal animal) {
+void print_animal(animal animal) {
     const char species_name[][10] = {
             "Mammal",
             "Fish",
